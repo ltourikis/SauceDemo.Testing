@@ -45,7 +45,7 @@ Sensitive data like credentials are managed through environment variables using 
 STANDARD_USER=standard_user
 STANDARD_PASSWORD=secret_sauce
 ```
-The `.env` file is added to `.gitignore` to prevent credential exposure, while `test-data.ts` provides a clean interface to access these variables:
+The `.env` file should be present on `.gitignore` to prevent credential exposure, but was kept so that the project can run out of the box.
 ```typescript
 export const TestUsers = {
     STANDARD: {
